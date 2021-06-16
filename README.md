@@ -24,8 +24,8 @@ pip install opencv-python
 ```
 
 ## How to run
-
-First, put all the images you want in the 'images' folder or any other folder you wish. Then, run 
+First, create an "images" folder next to the script if you wish to use default values.
+Second, put all the images you want in the 'images' folder or any other folder you wish. Then, run 
 ```bash
 python detect_blur.py --images images
 ```
