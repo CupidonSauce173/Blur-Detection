@@ -1,6 +1,7 @@
 # USAGE
 # python detect_blur.py --images images
-# python detect_blur.py --images <folder_name>
+# python detect_blur.py --images <folder_name> --threshold <blur int value> --output_file_name <name>
+# python detect_blur.py -i <folder_name> -t <blur int value> -o <name>
 import os
 import sys
 import argparse
@@ -22,10 +23,10 @@ ap.add_argument("-i", "--images", required=True,
 	help="path to input directory of images")
 ap.add_argument("-t", "--threshold", type=float, default=100.0,
 	help="focus measures that fall below this value will be considered 'blurry'")
-ap.add_argument("-o", "--output_file_name", type=str, default="results.txt",
+ap.add_argument("-o", "--output_file_name", type=str, default="results",
     help="set a custom output file name for the results.")
 args = vars(ap.parse_args())
-results_name = args["output_file_name"]
+results_name = args["output_file_name"] + ".txt"
 image_list = list(paths.list_images(args["images"]))
 results_file = open(results_name, "w")
   
