@@ -31,7 +31,7 @@ python detect_blur.py --images images
 ```
 ## Usage
 There are few arguments you can put to customize your experience.
-```bash
+```
 --images <directory_path>, leave it to 'images' if you put all your images in the provided images folder, or else, use something like --images "path/to/folder".
 --threshold <int value>, leave it for a default value of 100 (100%). This let you set the maximum amount of blur an image can have before being flagged as blurry.
 --output_file_name <file name>, leave it for a default value of "results.txt". This let you customize the output file of the script at the end of the process.
