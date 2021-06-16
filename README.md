@@ -48,7 +48,7 @@ python detect_blur.py --i E:\turcot_images --t 20 --o "image_result.txt"
 There will be a progress bar to show you how many images you process per second and also to show you where the script is.
 
 ## Little explaination of why I did this
-This project helped the project Turcot with analysing which pictures where blurry from drone they used to do the cartography of the whole sector. In my system, it can process around 2.1 pictures / second (pictures of 5472x3648 pixels and of around 4.5mb - 6.5mb).
+This project helped the project Turcot with analysing which pictures were blurry from drone they used to do the cartography of the whole sector. In my system, it can process around 2.1 pictures / second (pictures of 5472x3648 pixels and of around 4.5mb - 6.5mb).
 
 
 
